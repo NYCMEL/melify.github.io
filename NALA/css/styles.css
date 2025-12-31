@@ -70,3 +70,8 @@ footer {
     right: 0;
     z-index: 1000;
 }
+
+.item-selected {
+    border-bottom:2px #fff solid;
+    color: #FFF;
+}
