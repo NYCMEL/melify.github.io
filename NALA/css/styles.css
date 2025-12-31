@@ -2,6 +2,10 @@
    Base Sections
    ========================= */
 
+#wc {
+    font-family: Arial!important;
+}
+
 .hero {
   background-color: #0d6efd;
   color: #fff;
