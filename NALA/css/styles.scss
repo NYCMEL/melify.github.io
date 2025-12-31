@@ -1,0 +1,106 @@
+/* =========================
+   Variables
+   ========================= */
+
+$primary-blue: #0d6efd;
+$dark-bg: #333;
+$white: #fff;
+
+$breakpoint-md: 768px;
+
+/* =========================
+   Base Sections
+   ========================= */
+
+.hero {
+    background-color: $primary-blue;
+    color: $white;
+    padding: 80px 20px;
+}
+
+.navbar {
+    min-height: 60px;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   Logo
+   ========================= */
+
+.logo {
+    width: 30%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* =========================
+   Visibility Helpers
+   ========================= */
+
+.hide-on-small {
+    display: inline;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $dark-bg;
+    color: $white;
+    position: relative;
+
+    &.fixed-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+    }
+
+    .logo {
+	img {
+	    width: 120px;
+	    height: auto;
+	}
+    }
+
+    .hamburger {
+	font-size: 28px;
+	cursor: pointer;
+	user-select: none;
+    }
+}
+
+/* =========================
+   State
+   ========================= */
+
+.item-selected {
+    color: $white !important;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: $breakpoint-md) {
+    .hide-on-small {
+	display: none;
+    }
+
+    .navbar-brand {
+	// intentionally left blank for future overrides
+    }
+
+    .logo {
+	width: 100px;
+    }
+}

@@ -1,76 +1,94 @@
+/* =========================
+   Base Sections
+   ========================= */
+
 .hero {
-    background-color: #0d6efd;
-    color: white;
-    padding: 80px 20px;
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 80px 20px;
 }
 
 .navbar {
-    min-height: 60px;
+  min-height: 60px;
 }
 
 footer {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
-/* CSS */
+/* =========================
+   Logo
+   ========================= */
+
 .logo {
-    width: 30%; /* Logo takes 20% of parent container width */
-    max-width: 800px; /* Maximum width */
-    height: auto; /* Maintains aspect ratio */
+  width: 30%;
+  max-width: 800px;
+  height: auto;
 }
 
-/* Default: text visible */
+/* =========================
+   Visibility Helpers
+   ========================= */
+
 .hide-on-small {
-    display: inline;
+  display: inline;
 }
 
-/* Hide on screens smaller than 768px */
-@media (max-width: 768px) {
-    .hide-on-small {
-	display: none;
-    }
+/* =========================
+   Header
+   ========================= */
 
-    .navbar-brand {
-    }
-
-    .logo {
-	width: 100px;
-    }
-}
-
-/* Header layout */
 .header {
-    display: flex;
-    justify-content: space-between; /* Logo left, hamburger right */
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
 }
 
-/* Logo */
-.header .logo img {
-    width: 120px;
-    height: auto;
-}
-
-/* Hamburger */
-.header .hamburger {
-    font-size: 28px;
-    cursor: pointer;
-    user-select: none;
-}
-
-/* Optional: Always fixed at top of page */
 .header.fixed-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
+
+.header .logo img {
+  width: 120px;
+  height: auto;
+}
+
+.header .hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* =========================
+   State
+   ========================= */
 
 .item-selected {
-    color: #FFF!important;
+  color: #fff !important;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+  .hide-on-small {
+    display: none;
+  }
+
+  .navbar-brand {
+    /* intentionally left blank for future overrides */
+  }
+
+  .logo {
+    width: 100px;
+  }
 }
