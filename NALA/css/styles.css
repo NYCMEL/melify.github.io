@@ -72,6 +72,5 @@ footer {
 }
 
 .item-selected {
-    border-bottom:2px #fff solid;
-    color: #FFF;
+    color: #FFF!important;
 }
